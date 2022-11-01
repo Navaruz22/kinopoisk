@@ -29,10 +29,15 @@
   },
   "browserslist": {
     "production": [
-      "since 2010"
+      ">0.2%",
+      "last 2 version",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
-      "sicne 2010"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
