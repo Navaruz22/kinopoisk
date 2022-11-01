@@ -1,0 +1,35 @@
+.slider {
+  padding: 0 20px;
+  position: relative;
+}
+
+@media (max-width: 668px) {
+  .silder {
+    padding: 0 10px;
+  }
+}
+
+.navigation button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 5%);
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}

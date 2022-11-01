@@ -1,0 +1,15 @@
+.social_media {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.social_media a > svg {
+  fill: #fff;
+  opacity: 0.4;
+  transition: all 0.2s ease-out;
+}
+
+.social_media a:hover > svg {
+  opacity: 1;
+}

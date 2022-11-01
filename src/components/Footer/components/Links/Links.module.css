@@ -1,0 +1,25 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@media (max-width: 680px) {
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.links a {
+  color: #fff;
+  opacity: 0.4;
+  transition: all 0.2s ease-out;
+}
+
+.links a:hover {
+  opacity: 1;
+}

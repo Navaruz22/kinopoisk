@@ -1,0 +1,51 @@
+.logo {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5px 10px 0;
+}
+
+.img_block {
+  max-width: 163px;
+}
+
+.img_block img {
+  width: 100%;
+}
+
+.burger_btn {
+  outline: none;
+  border: none;
+  background: none;
+  margin-right: 20px;
+  display: none;
+}
+
+.burger_btn * {
+  fill: #999999;
+}
+
+.menu_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #333;
+}
+
+@media (max-width: 998px) {
+  .burger_btn {
+    display: inline;
+  }
+}
+
+@media (max-width: 400px) {
+  .burger_btn {
+    margin-right: 15px;
+  }
+  .burger_btn * {
+    width: 15px;
+    height: 15px;
+  }
+}

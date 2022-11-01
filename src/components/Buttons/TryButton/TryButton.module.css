@@ -1,0 +1,32 @@
+.try_button {
+  outline: none;
+  border: none;
+  padding: 4px 14px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  max-width: 102px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: radial-gradient(
+    96.72% 187.09% at 0 100.29%,
+    #ff5c00 5.21%,
+    #ea507c 25.52%,
+    #b941ef 48.44%,
+    #5b61ff 70.83%,
+    #21bee7 93.75%
+  );
+  transition: all 0.1s ease-out;
+}
+
+.try_button:hover {
+  transform: scale(110%);
+}
+
+@media (max-width: 767px) {
+  .try_button {
+    padding: 4px 8px;
+  }
+}

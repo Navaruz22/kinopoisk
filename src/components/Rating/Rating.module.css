@@ -1,0 +1,14 @@
+.rating {
+  display: inline-block;
+  min-width: 32px;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 5px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  z-index: 5;
+}

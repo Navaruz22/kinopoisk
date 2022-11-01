@@ -1,0 +1,88 @@
+.info_picture {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.picture_block {
+  margin-bottom: 25px;
+}
+
+.picture_block img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.buttons_block {
+  margin-bottom: 35px;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.buttons_block button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #333;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.buttons_block button:hover {
+  background-color: rgba(51, 51, 51, 0.103);
+}
+
+.watch {
+  height: 34px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 9px;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.add {
+  width: 36px;
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social_links a {
+  width: 74px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vk {
+  background-color: #4c74a2;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.telegram {
+  background-color: #08c;
+}

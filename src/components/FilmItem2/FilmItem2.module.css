@@ -1,0 +1,45 @@
+.film {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 4px;
+  display: block;
+}
+
+.film:hover {
+  background-color: #000;
+  transition: all 0.3s ease-out;
+}
+.film:hover img {
+  opacity: 0.6;
+  transition: opacity 0.4s;
+}
+
+.film img {
+  width: 100%;
+  height: 330px;
+  min-height: 330px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 998px) {
+  .film img {
+    height: 280px;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 668px) {
+  .film img {
+    height: 230px;
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 420px) {
+  .film img {
+    height: 280px;
+    min-height: 280px;
+  }
+}

@@ -1,0 +1,21 @@
+.apps {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 680px) {
+  .apps {
+    display: none;
+  }
+}
+
+.apps a svg {
+  transition: all 0.3s ease-out;
+  opacity: 0.6;
+}
+
+.apps a:hover svg {
+  opacity: 1;
+}

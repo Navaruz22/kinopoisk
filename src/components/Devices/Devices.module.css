@@ -1,0 +1,259 @@
+.devices {
+  display: grid;
+  grid-template-columns: 200px 160px 150px 150px 160px;
+  grid-template-rows: 130px 130px;
+  row-gap: 15px;
+  column-gap: 15px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.devices::-webkit-scrollbar {
+  width: 0;
+}
+
+.device_container {
+  width: 100%;
+  padding: 20px;
+  background-color: #000;
+}
+
+.maintitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1220px) {
+  .devices {
+    grid-template-columns: 200px 140px 130px 130px 160px;
+  }
+}
+
+@media (max-width: 998px) {
+  .devices {
+    grid-template-columns: 180px 160px 150px 150px 160px;
+  }
+}
+
+.link {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 16px;
+  background-color: rgba(119, 119, 119, 0.1);
+  transition: all 0.3s ease;
+}
+
+.simple_tv {
+  flex-direction: column;
+  padding: 24px 24px 16px;
+  grid-row: 1/3;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #777;
+}
+
+.simple_tv img {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  top: 14px;
+  left: -36px;
+  width: 392px;
+  height: 392px;
+}
+
+.simple_tv:hover {
+  background-color: #fff;
+  color: #000;
+}
+.simple_tv:hover .title {
+  color: #000;
+}
+
+.single {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgba(119, 119, 119, 0.1);
+  transition: all 0.3s ease;
+  gap: 20px;
+}
+
+.single img:nth-child(2) {
+  display: none;
+}
+.single:hover {
+  background-color: #fff;
+}
+.single:hover .title {
+  color: #000;
+}
+.single:hover img:nth-child(2) {
+  display: block;
+}
+.single:hover img:first-child {
+  display: none;
+}
+.samsung {
+  grid-column: 2;
+  grid-row: 1;
+}
+.lg {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.android {
+  grid-column: 3/5;
+  grid-row: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  padding: 24px 24px 16px;
+}
+
+.android .logo {
+  width: 118px;
+  height: 20px;
+}
+.android .bg {
+  position: absolute;
+  top: -32px;
+  right: 23px;
+  width: 204px;
+  height: 226px;
+  transform: scaleX(-1);
+}
+
+.android .bg:last-child {
+  display: none;
+}
+
+.android .logo:nth-child(2) {
+  display: none;
+}
+.android:hover {
+  background-color: #fff;
+}
+.android:hover .logo:first-child {
+  display: none;
+}
+.android:hover .logo:nth-child(2) {
+  display: block;
+}
+
+.mi {
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.mi .logo:nth-child(2) {
+  display: none;
+}
+
+.mi:hover {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.mi:hover .logo:first-child {
+  display: none;
+}
+.mi:hover .logo:nth-child(2) {
+  display: block;
+}
+
+.mi .bg {
+  position: absolute;
+  bottom: 86px;
+  left: 93px;
+  width: 204px;
+  height: 226px;
+  transform: scaleX(-1);
+}
+
+.sony {
+  grid-column: 4;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.sony .logo:nth-child(2) {
+  display: none;
+}
+
+.sony:hover {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.sony:hover .logo:first-child {
+  display: none;
+}
+.sony:hover .logo:nth-child(2) {
+  display: block;
+}
+
+.sony .bg {
+  position: absolute;
+  right: 23px;
+  bottom: 86px;
+  width: 204px;
+  height: 226px;
+  transform: scaleX(-1);
+}
+
+.apple {
+  justify-content: center;
+  grid-column: 5;
+  grid-row: 1/3;
+}
+
+.apple .logo {
+  width: 65px;
+  height: 30px;
+  margin-top: 24px;
+}
+
+.apple .logo:nth-child(2) {
+  display: none;
+}
+
+.apple:hover {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.apple:hover .logo:first-child {
+  display: none;
+}
+.apple:hover .logo:nth-child(2) {
+  display: block;
+}
+
+.apple .bg {
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  width: 188px;
+}
