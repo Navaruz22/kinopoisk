@@ -9,10 +9,7 @@ const InfoPicture = ({ imgUrl }) => {
   return (
     <div className={styles.info_picture}>
       <div className={styles.picture_block}>
-        <img
-          src="https://st.kp.yandex.net/images/film_big/590286.jpg"
-          alt="img"
-        />
+        <img src={imgUrl} alt="img" />
       </div>
       <div className={styles.buttons_block}>
         <button className={styles.watch}>+ Буду смотреть</button>

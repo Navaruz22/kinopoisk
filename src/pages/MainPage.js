@@ -12,7 +12,7 @@ const MainPage = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
     try {
-      const response = await Api.get("/movie", {
+      const { data } = await Api.get("/movie", {
         params: {
           field: "year",
           search: 2022,
@@ -21,7 +21,7 @@ const MainPage = () => {
           limit: 10,
         },
       });
-      setData(response.data.docs);
+      setData(data.docs);
     } catch (error) {
       return console.log(error);
     }

@@ -6,8 +6,8 @@ import styles from "./Info.module.css";
 const Info = ({ film }) => {
   return (
     <div className={styles.info}>
-      <InfoPicture />
-      <InfoContent />
+      <InfoPicture imgUrl={film.poster?.url} />
+      <InfoContent film={film} />
     </div>
   );
 };

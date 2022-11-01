@@ -9,7 +9,7 @@ const Films = ({ title, color, background, breakpoints, movies, type }) => {
       style={{ color: color, backgroundColor: background }}
     >
       <h3 className={styles.title}>{title}</h3>
-      {movies.length && (
+      {movies.length > 0 && (
         <FilmsCarousel breakpoints={breakpoints} movies={movies} type={type} />
       )}
     </div>
